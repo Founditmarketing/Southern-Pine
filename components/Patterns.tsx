@@ -6,22 +6,22 @@ const Patterns: React.FC = () => {
   const patterns = [
     {
       type: PatternType.NICKEL_GAP,
-      image: "/nickel-gap.png",
+      image: "/newnickelgap.png",
       desc: "A modern classic. Features a clean 1/8\" gap between boards for sharp, consistent shadow lines. Perfect for walls and ceilings."
     },
     {
       type: PatternType.V_GROOVE,
-      image: "/v-groove.png",
+      image: "/newvgroove.png",
       desc: "Traditional tongue and groove with chamfered edges that form a 'V' shape when joined. Offers a timeless, rustic charm."
     },
     {
       type: PatternType.FLOORING,
-      image: "/flooring.png",
+      image: "/newflooring.png",
       desc: "Durable, center-matched tongue and groove flooring. Creates a smooth, seamless surface ready for sanding and finishing."
     },
     {
       type: PatternType.BEADED,
-      image: "/beadboard.webp",
+      image: "/newbeaded.png",
       desc: "Classic Southern beadboard. Features a decorative bead down the center and edge. Ideal for porch ceilings and wainscoting."
     }
   ];

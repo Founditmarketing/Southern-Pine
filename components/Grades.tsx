@@ -20,7 +20,7 @@ const Grades: React.FC = () => {
             <div className="flex flex-col">
               <div className="relative h-80 rounded-lg overflow-hidden mb-6 shadow-md">
                 <img
-                  src="/premium-knotty.png"
+                  src="/newpremiumknotty.png"
                   alt="Premium Knotty Grade"
                   className="w-full h-full object-cover"
                 />
@@ -45,7 +45,7 @@ const Grades: React.FC = () => {
             <div className="flex flex-col">
               <div className="relative h-80 rounded-lg overflow-hidden mb-6 shadow-md">
                 <img
-                  src="/clear-grade.png"
+                  src="/newcleargrade.png"
                   alt="Clear Grade"
                   className="w-full h-full object-cover"
                 />
@@ -59,8 +59,8 @@ const Grades: React.FC = () => {
               </p>
               <ul className="text-sm text-gray-500 space-y-2">
                 <li className="flex items-center"><span className="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>99% Knot Free</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>Vertical Grain Orientation</li>
-                <li className="flex items-center"><span className="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>Best for painting</li>
+                <li className="flex items-center"><span className="w-2 h-2 bg-gray-400 rounded-full mr-2"></span>Best for Staining, Whitewashing, or Pickling</li>
+
               </ul>
             </div>
           </ScrollReveal>
