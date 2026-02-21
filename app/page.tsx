@@ -24,8 +24,9 @@ export default function Home() {
             {/* Header */}
             <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-40 transition-all">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    <a href="#" className="text-2xl font-serif font-bold tracking-tight text-gray-900">
-                        Southern Pine Depot
+                    <a href="#" className="flex items-baseline space-x-2">
+                        <span className="text-2xl font-serif font-bold tracking-tight text-gray-900">Southern Pine Depot</span>
+                        <span className="text-[10px] text-gray-400 font-mono">v1.2.1</span>
                     </a>
 
                     {/* Desktop Nav */}
