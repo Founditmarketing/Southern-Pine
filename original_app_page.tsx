@@ -22,7 +22,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
             {/* Header */}
-            <header className="bg-white shadow-sm sticky top-0 z-40">
+            <header className="bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-40 transition-all">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                     <a href="#" className="text-2xl font-serif font-bold tracking-tight text-gray-900">
                         Southern Pine Depot
@@ -104,7 +104,7 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="max-w-4xl mx-auto">
+                        <div className="max-w-6xl mx-auto">
                             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
 
                                 {/* Column 1: The Form */}
