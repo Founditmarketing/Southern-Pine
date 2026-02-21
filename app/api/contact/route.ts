@@ -34,7 +34,7 @@ export async function POST(request: Request) {
 
         const { data, error } = await resend.emails.send({
             from: 'Southern Pine Depot <system@southernpinedepot.com>',
-            to: ['kylan@founditmarketing.com'],
+            to: ['Leighballen4@gmail.com'],
             replyTo: email,
             subject: `New Quote Request from ${name}`,
             html: `
