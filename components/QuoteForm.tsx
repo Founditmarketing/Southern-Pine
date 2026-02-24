@@ -154,7 +154,7 @@ const QuoteForm: React.FC<QuoteFormProps> = ({ onSqFtChange }) => {
                 name="zipCode"
                 required
                 className="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-md focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
-                placeholder="e.g. 37209"
+                placeholder="e.g. 37122"
                 value={formData.zipCode}
                 onChange={handleChange}
               />

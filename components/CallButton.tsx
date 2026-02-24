@@ -4,7 +4,7 @@ import { Phone } from 'lucide-react';
 const CallButton: React.FC = () => {
     return (
         <a
-            href="tel:6155550199"
+            href="tel:6019276692"
             className="fixed bottom-6 right-6 z-50 p-4 rounded-full shadow-2xl transition-all duration-300 bg-green-600 hover:bg-green-700 text-white hover:scale-110"
             aria-label="Call Us"
         >

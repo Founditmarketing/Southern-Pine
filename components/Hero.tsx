@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
         >
           Mill direct <span className="font-semibold text-white">Shiplap, V-Groove, Flooring, and Tongue & Groove</span>.
           <br className="hidden md:block" />
-          Milled in Mississippi, stocked in Nashville. <span className="text-amber-400 font-medium">Same Day Delivery OR Pickup at our Warehouse.</span>
+          Milled in Mississippi, stocked in Mt Juliet. <span className="text-amber-400 font-medium">Same Day Delivery OR Pickup at our Warehouse.</span>
           <br />
           <span className="text-base text-gray-300 block mt-2">
             We can deliver to your jobsite, or you can come get this material directly from our warehouse at<br className="hidden md:inline" /> 245 Couchville Industrial Blvd, Mt Juliet, TN 37122
