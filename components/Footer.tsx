@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <img
               src="/Southerndepotlogowhitetext.png"
               alt="Southern Pine Depot"
-              className="h-12 w-auto mb-6"
+              className="h-20 w-auto mb-6"
             />
             <p className="text-gray-400 text-lg leading-relaxed max-w-md">
               Factory Direct Southern Yellow Pine. <br />
