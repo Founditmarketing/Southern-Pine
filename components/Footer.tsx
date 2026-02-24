@@ -8,7 +8,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
           <div className="col-span-1 lg:col-span-2">
-            <h2 className="text-3xl font-serif font-bold text-amber-50 mb-4">Southern Pine Depot</h2>
+            <img
+              src="/Southerndepotlogowhitetext.png"
+              alt="Southern Pine Depot"
+              className="h-12 w-auto mb-6"
+            />
             <p className="text-gray-400 text-lg leading-relaxed max-w-md">
               Factory Direct Southern Yellow Pine. <br />
               <span className="text-white font-medium">Milled in Mississippi. Stocked in Mt Juliet.</span>
