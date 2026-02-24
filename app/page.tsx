@@ -23,9 +23,13 @@ export default function Home() {
         <div className="min-h-screen bg-gray-100 flex flex-col font-sans">
             {/* Header */}
             <header className="bg-white shadow-sm sticky top-0 z-40">
-                <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                    <a href="#" className="text-2xl font-serif font-bold tracking-tight text-gray-900">
-                        Southern Pine Depot
+                <div className="w-full pl-4 pr-4 md:pr-12 py-4 flex justify-between items-center">
+                    <a href="#" className="block h-8 md:h-12">
+                        <img
+                            src="/Southerndepotlonglogo.png"
+                            alt="Southern Pine Depot"
+                            className="h-full w-auto object-contain"
+                        />
                     </a>
 
                     {/* Desktop Nav */}
