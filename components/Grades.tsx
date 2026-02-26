@@ -1,5 +1,6 @@
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
+import GradeSlider from './GradeSlider';
 
 const Grades: React.FC = () => {
   return (
@@ -18,16 +19,10 @@ const Grades: React.FC = () => {
           {/* Premium Knotty */}
           <ScrollReveal delay={0.2} variant="slide-right">
             <div className="flex flex-col">
-              <div className="relative h-80 rounded-lg overflow-hidden mb-6 shadow-md">
-                <img
-                  src="/newpremiumknotty.png"
-                  alt="Premium Knotty Grade"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4 bg-amber-900/90 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
-                  Best Seller
-                </div>
-              </div>
+              <GradeSlider
+                images={["/premiumgrade1.jpg", "/premiumgrade2.jpg", "/premiumgrade3.jpg"]}
+                alt="Premium Knotty Grade"
+              />
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">Premium Knotty</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Our most popular option. Characterized by sound, tight knots and beautiful grain patterns. This grade captures the authentic, rustic warmth of Southern Yellow Pine. Perfect for farmhouses, cabins, and textured accent walls.
@@ -43,16 +38,10 @@ const Grades: React.FC = () => {
           {/* Clear Grade */}
           <ScrollReveal delay={0.4} variant="slide-left">
             <div className="flex flex-col">
-              <div className="relative h-80 rounded-lg overflow-hidden mb-6 shadow-md">
-                <img
-                  src="/newcleargrade.png"
-                  alt="Clear Grade"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 left-4 bg-gray-900/90 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
-                  Modern Choice
-                </div>
-              </div>
+              <GradeSlider
+                images={["/Clear Grade.jpg", "/cleargrade2.jpg", "/cleargrade3.jpg"]}
+                alt="Clear Grade"
+              />
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">Clear Grade (C & Better)</h3>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Virtually knot-free. This grade offers a sleek, contemporary look with long, clean grain lines. While small pin knots may occasionally appear, the overall appearance is smooth and uniform. Ideal for modern interiors and painted finishes.
