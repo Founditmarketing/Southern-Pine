@@ -13,47 +13,53 @@ const Gallery: React.FC = () => {
         </ScrollReveal>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-          {/* Item 1: Large Feature - Room with Beams */}
+          {/* Item 1: Large Feature - Beaded Ceiling (Pic 2) */}
           <ScrollReveal delay={0.1} className="col-span-2 row-span-2 rounded-xl overflow-hidden relative group bg-gray-800 border border-gray-700">
             <img
-              src="/pinegallery4.png"
-              alt="Custom Southern Pine Project"
+              src="/Beaded Ceiling pic 2.png"
+              alt="Southern Pine Beaded Ceiling Detail"
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
-              <p className="font-semibold text-amber-500">Custom Installation</p>
-              <p className="text-xs text-gray-300">Premium Grade</p>
+              <p className="font-semibold text-amber-500">Beaded Ceiling</p>
+              <p className="text-xs text-gray-300">Classic Decorative Finish</p>
             </div>
           </ScrollReveal>
 
-          {/* Item 2: Small Square - Wood Ceiling */}
+          {/* Item 2: Small Square - V-Groove */}
           <ScrollReveal delay={0.2} className="col-span-1 row-span-1 rounded-xl overflow-hidden relative group bg-gray-800 border border-gray-700">
             <img
-              src="/pinegallery2.png"
-              alt="Southern Pine Detail"
+              src="/V Groove pic 2.png"
+              alt="Southern Pine V-Groove Detail"
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
+            <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-xs font-semibold text-amber-500">V-Groove</p>
+            </div>
           </ScrollReveal>
 
-          {/* Item 3: Small Square - Dark Wall */}
+          {/* Item 3: Small Square - Flooring */}
           <ScrollReveal delay={0.3} className="col-span-1 row-span-1 rounded-xl overflow-hidden relative group bg-gray-800 border border-gray-700">
             <img
-              src="/pinegallery3.png"
-              alt="Southern Pine Texture"
+              src="/Flooring pic.png"
+              alt="Southern Pine Flooring Texture"
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
+            <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-xs font-semibold text-amber-500">Timber Flooring</p>
+            </div>
           </ScrollReveal>
 
-          {/* Item 4: Wide Rectangle - White Ceiling */}
+          {/* Item 4: Wide Rectangle - Timber Flooring (Pic 2) */}
           <ScrollReveal delay={0.4} className="col-span-2 row-span-1 rounded-xl overflow-hidden relative group bg-gray-800 border border-gray-700">
             <img
-              src="/pinegallery.png"
+              src="/Flooring pic 2.png"
               alt="Finished Pine Surface"
               className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
-              <p className="font-semibold text-amber-500">Elegant Finish</p>
-              <p className="text-xs text-gray-300">Clear Grade</p>
+              <p className="font-semibold text-amber-500">Timber Flooring</p>
+              <p className="text-xs text-gray-300">Durable Center-Matched Grade</p>
             </div>
           </ScrollReveal>
         </div>
