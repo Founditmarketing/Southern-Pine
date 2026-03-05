@@ -1,27 +1,32 @@
 import React from 'react';
 import { PatternType } from '../types';
 import ScrollReveal from './ScrollReveal';
+import PatternSlider from './PatternSlider';
 
 const Patterns: React.FC = () => {
   const patterns = [
     {
       type: PatternType.NICKEL_GAP,
-      image: "/newnickelgap.png",
+      image: "/Nickel Gap Shiplap pic.png",
+      image2: "/Nickel Gap Shiplap pic 2.png",
       desc: "A modern classic. Features a clean 1/8\" gap between boards for sharp, consistent shadow lines. Perfect for walls and ceilings."
     },
     {
       type: PatternType.V_GROOVE,
-      image: "/newvgroove.png",
-      desc: "Traditional tongue and groove with chamfered edges that form a 'V' shape when joined. Offers a timeless, rustic charm."
+      image: "/V Groove pic.png",
+      image2: "/V Groove pic 2.png",
+      desc: "Our classic tongue and groove pattern. Called 116/122 in the lumber industry, our pattern is reversible. Center V on one side and V Groove on the other side."
     },
     {
       type: PatternType.FLOORING,
-      image: "/newflooring.png",
+      image: "/Flooring pic.png",
+      image2: "/Flooring pic 2.png",
       desc: "Durable, center-matched tongue and groove flooring. Creates a smooth, seamless surface ready for sanding and finishing."
     },
     {
       type: PatternType.BEADED,
-      image: "/newbeaded.png",
+      image: "/Beaded Ceiling pic.png",
+      image2: "/Beaded Ceiling pic 2.png",
       desc: "Classic Southern beadboard. Features a decorative bead down the center and edge. Ideal for porch ceilings and wainscoting."
     }
   ];
@@ -48,15 +53,13 @@ const Patterns: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {patterns.map((p, index) => (
             <ScrollReveal key={p.type} delay={index * 0.1} variant="fade-up">
-              <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="h-64 overflow-hidden">
-                  <img
-                    src={p.image}
-                    alt={p.type}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <div className="p-6">
+              <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-gray-100">
+                <PatternSlider
+                  image1={p.image}
+                  image2={p.image2}
+                  alt={p.type}
+                />
+                <div className="p-6 flex-grow">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{p.type}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {p.desc}

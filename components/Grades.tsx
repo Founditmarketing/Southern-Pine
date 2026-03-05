@@ -20,7 +20,7 @@ const Grades: React.FC = () => {
           <ScrollReveal delay={0.2} variant="slide-right">
             <div className="flex flex-col">
               <GradeSlider
-                images={["/premiumgrade1.jpg", "/premiumgrade2.jpg", "/premiumgrade3.jpg"]}
+                images={["/premiumgrade1.jpg", "/premiumgrade3.jpg"]}
                 alt="Premium Knotty Grade"
               />
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">Premium Knotty</h3>
@@ -39,7 +39,7 @@ const Grades: React.FC = () => {
           <ScrollReveal delay={0.4} variant="slide-left">
             <div className="flex flex-col">
               <GradeSlider
-                images={["/cleargrade1.jpg", "/cleargrade2.jpg", "/cleargrade3.jpg"]}
+                images={["/cleargrade1.jpg", "/cleargrade2.jpg", "/cleargrade3.jpg", "/premiumgrade2.jpg"]}
                 alt="Clear Grade"
               />
               <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">Clear Grade (C & Better)</h3>

@@ -12,10 +12,9 @@ export interface QuoteFormData {
 }
 
 export enum PatternType {
-  NICKEL_GAP = 'Nickel Gap',
-  V_GROOVE = 'V-Groove',
-  CENTER_V = 'Center V',
-  BEADED = 'Beaded',
+  NICKEL_GAP = 'Nickel Gap Shiplap',
+  V_GROOVE = 'V-Groove / Center V (116/122)',
+  BEADED = 'Beaded Ceiling',
   FLOORING = 'Flooring',
 }
 
