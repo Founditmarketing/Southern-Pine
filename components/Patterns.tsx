@@ -14,10 +14,10 @@ const Patterns: React.FC = () => {
     },
     {
       type: PatternType.V_GROOVE,
-      image: "/V Groove pic.png",
-      image2: "/V Groove pic 2.png",
+      image: "/V Groove pic 2.png",
+      image2: "/V Groove pic.png",
       desc: "Our classic tongue and groove pattern. Called 116/122 in the lumber industry, our pattern is reversible. Center V on one side and V Groove on the other side.",
-      stackedLayout: false,
+      stackedLayout: true,
     },
     {
       type: PatternType.FLOORING,
