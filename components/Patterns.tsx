@@ -21,17 +21,17 @@ const Patterns: React.FC = () => {
     },
     {
       type: PatternType.FLOORING,
-      image: "/Flooring pic.png",
-      image2: "/Flooring pic 2.png",
+      image: "/Flooring pic 2.png",
+      image2: "/Flooring pic.png",
       desc: "Durable, center-matched tongue and groove flooring. Creates a smooth, seamless surface ready for sanding and finishing.",
-      stackedLayout: false,
+      stackedLayout: true,
     },
     {
       type: PatternType.BEADED,
-      image: "/Beaded Ceiling pic.png",
-      image2: "/Beaded Ceiling pic 2.png",
+      image: "/Beaded Ceiling pic 2.png",
+      image2: "/Beaded Ceiling pic.png",
       desc: "Classic Southern beadboard. Features a decorative bead down the center and edge. Ideal for porch ceilings and wainscoting.",
-      stackedLayout: false,
+      stackedLayout: true,
     }
   ];
 
