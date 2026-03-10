@@ -7,27 +7,31 @@ const Patterns: React.FC = () => {
   const patterns = [
     {
       type: PatternType.NICKEL_GAP,
-      image: "/Nickel Gap Shiplap pic.png",
-      image2: "/Nickel Gap Shiplap pic 2.png",
-      desc: "A modern classic. Features a clean 1/8\" gap between boards for sharp, consistent shadow lines. Perfect for walls and ceilings."
+      image: "/Nickel Gap Shiplap pic 2.png",
+      image2: "/Nickel Gap Shiplap pic.png",
+      desc: "A modern classic. Features a clean 1/8\" gap between boards for sharp, consistent shadow lines. Perfect for walls and ceilings.",
+      stackedLayout: true,
     },
     {
       type: PatternType.V_GROOVE,
       image: "/V Groove pic.png",
       image2: "/V Groove pic 2.png",
-      desc: "Our classic tongue and groove pattern. Called 116/122 in the lumber industry, our pattern is reversible. Center V on one side and V Groove on the other side."
+      desc: "Our classic tongue and groove pattern. Called 116/122 in the lumber industry, our pattern is reversible. Center V on one side and V Groove on the other side.",
+      stackedLayout: false,
     },
     {
       type: PatternType.FLOORING,
       image: "/Flooring pic.png",
       image2: "/Flooring pic 2.png",
-      desc: "Durable, center-matched tongue and groove flooring. Creates a smooth, seamless surface ready for sanding and finishing."
+      desc: "Durable, center-matched tongue and groove flooring. Creates a smooth, seamless surface ready for sanding and finishing.",
+      stackedLayout: false,
     },
     {
       type: PatternType.BEADED,
       image: "/Beaded Ceiling pic.png",
       image2: "/Beaded Ceiling pic 2.png",
-      desc: "Classic Southern beadboard. Features a decorative bead down the center and edge. Ideal for porch ceilings and wainscoting."
+      desc: "Classic Southern beadboard. Features a decorative bead down the center and edge. Ideal for porch ceilings and wainscoting.",
+      stackedLayout: false,
     }
   ];
 
@@ -53,19 +57,49 @@ const Patterns: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {patterns.map((p, index) => (
             <ScrollReveal key={p.type} delay={index * 0.1} variant="fade-up">
-              <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-gray-100">
-                <PatternSlider
-                  image1={p.image}
-                  image2={p.image2}
-                  alt={p.type}
-                />
-                <div className="p-6 flex-grow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{p.type}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {p.desc}
-                  </p>
+              {p.stackedLayout ? (
+                /* Nickel Gap Shiplap: photo above, description, photo below */
+                <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-gray-100">
+                  {/* Top photo */}
+                  <div className="h-64 w-full overflow-hidden border-b border-gray-100">
+                    <img
+                      src={p.image}
+                      alt={`${p.type} - installed`}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  {/* Description */}
+                  <div className="p-6 flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{p.type}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {p.desc}
+                    </p>
+                  </div>
+                  {/* Bottom photo */}
+                  <div className="h-64 w-full overflow-hidden border-t border-gray-100">
+                    <img
+                      src={p.image2}
+                      alt={`${p.type} - profile`}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
+              ) : (
+                /* All other patterns: slider on top, description below */
+                <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-gray-100">
+                  <PatternSlider
+                    image1={p.image}
+                    image2={p.image2}
+                    alt={p.type}
+                  />
+                  <div className="p-6 flex-grow">
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">{p.type}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {p.desc}
+                    </p>
+                  </div>
+                </div>
+              )}
             </ScrollReveal>
           ))}
         </div>
