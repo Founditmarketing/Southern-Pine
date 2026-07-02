@@ -45,12 +45,17 @@ const QuoteForm: React.FC<QuoteFormProps> = ({ onSqFtChange }) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://www.founditos.com/api/contact-form/830eac12-9190-4f7a-b80c-b6ef0820df86', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: `ZIP: ${formData.zipCode}\nPattern: ${formData.pattern}\nGrade: ${formData.grade}\nFinish: ${formData.finish}\nSq Ft: ${formData.squareFootage}\nForklift: ${formData.hasForklift ? 'Yes' : 'No'}\nLift Gate: ${formData.needsLiftGate ? 'Yes' : 'No'}`,
+        }),
       });
 
       if (response.ok) {
