@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Crimson_Text } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({
@@ -25,6 +26,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
+            <head>
+                {/* Found It Lead Capture */}
+                <Script src="https://found-it-crm-flax.vercel.app/embed/lead-capture.js" data-account="830eac12-9190-4f7a-b80c-b6ef0820df86" strategy="afterInteractive" />
+            </head>
             <body className={`${inter.variable} ${crimson.variable} font-sans`}>
                 {children}
             </body>
